@@ -153,6 +153,12 @@ h2{
     font-size: 16px;
     line-height: 28px;
 }
+.image{
+    padding: 0;
+    width: 1450px;
+    align-items: center;
+    align-content: center;
+}
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -172,7 +178,10 @@ h2{
     }
     .card {
         width: 100%;
-        max-width: 400px;
+        max-width: 200px;
+    }
+    .image{
+        width: 100%;
     }
 }
 
@@ -188,5 +197,8 @@ h2{
     }
     section {
         padding: 30px 5%;
+    }
+    .image{
+        width: 100%;
     }
 }
