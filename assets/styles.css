@@ -860,6 +860,11 @@
                 top: 10px;
                 left: 10px;
             }
+            .exp-img{
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+            }
             
         }
 
@@ -879,4 +884,10 @@
             .btn {
                 padding: 12px 20px;
             }
+            .exp-img{
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+            }
+            
         }
