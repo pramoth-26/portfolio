@@ -8,6 +8,36 @@
             --transition: all 0.3s ease-in-out;
         }
 
+        /* Section Backgrounds */
+        #hero {
+            background-color: var(--primary);
+        }
+         #projects {
+            background-color: var(--primary);
+        }
+         #experience {
+            background-color: var(--secondary);
+        }
+         #education {
+            background-color: var(--primary);
+        }   
+        #skills {
+            background-color: var(--secondary);
+        }
+         #intern {
+            background-color: var(--secondary);
+        }
+         #achievements{
+            background-color: var(--secondary);
+        }
+        #personal {
+            background-color: var(--primary);
+        }
+        #contact {
+            background-color: var(--secondary);
+            text-align: center;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -333,9 +363,7 @@
             gap: 20px;
         }
         /* Skills Section */
-        #skills {
-            background-color: var(--secondary);
-        }
+        
 
         .skills-grid {
             display: grid;
@@ -459,9 +487,7 @@
         }
 
         /* Intern Section */
-        #intern {
-            background-color: var(--secondary);
-        }
+       
 
         .exp-img{
             width: 270px;
@@ -635,9 +661,7 @@
         }
 
         /* Achievements Section */
-        #achievements{
-            background-color: var(--secondary);
-        }
+       
         .achievements-grid {
             
             display: grid;
@@ -663,10 +687,41 @@
             margin-bottom: 15px;
         }
 
+        /* Education Description */
+
+       
+
+.education-grid {
+    display: grid;
+    gap: 30px;
+}
+
+.education-item {
+    background: var(--secondary);
+    padding: 20px;
+    border-left: 5px solid #fefefc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.education-item h3 {
+    margin-bottom: 5px;
+    color: var(--accent);
+}
+
+.education-item h4 {
+    color: #fbf9f9;
+    font-weight: 500;
+}
+
+.edu-date {
+    font-style: italic;
+    color: #f9f7f7;
+    margin-bottom: 10px;
+}
+
+
         /* Personal Info Section */
-        #personal {
-            background-color: var(--primary);
-        }
+        
 
         .personal-info {
             max-width: 600px;
@@ -693,10 +748,7 @@
         }
 
         /* Contact Section */
-        #contact {
-            background-color: var(--secondary);
-            text-align: center;
-        }
+        
 
         .social-links {
             display: flex;
