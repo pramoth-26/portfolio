@@ -238,6 +238,13 @@ const projectsData = [
 // ─── SEMINARS & WEBINARS ─────────────────────────────────────────────────────
 const seminarsData = [
   {
+    id: 's9',
+    title: 'Cybersecurity Awareness Training',
+    date: 'Jun 2026',
+    description: 'Organized by INFOSEC IQ & ERPA.',
+    image: 'assets/cyber.png',
+  },
+  {
     id: 's1',
     title: 'UmagineTN',
     date: 'Feb 2024',
