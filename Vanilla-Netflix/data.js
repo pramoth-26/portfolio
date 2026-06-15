@@ -54,7 +54,17 @@ const skillsData = [
 const workData = [
   {
     id: 'w1',
-    date: 'November 2025 – Present',
+    date: 'June 2025 – May 2026',
+    title: ' Full Stack Developer',
+    company: 'ERPA',
+    description:
+      'Developed and maintained ERP-based applications using the MEAN stack (MongoDB, Express.js, Angular, Node.js). Collaborated with cross-functional teams using Jira for task management and Git for version control. Worked on Workday-related projects, contributing to feature development, bug fixing, and system enhancements. Utilized Sherpa AI to streamline development workflows and improve productivity.',
+    tech: [ 'Angular','Node.js', 'DBeaver', 'JavaScript'],
+    image: 'assets/erpalogo.png',
+  },
+  {
+    id: 'w2',
+    date: 'November 2025 – May 2026',
     title: 'Freelance Full Stack Developer',
     company: 'Self-Employed / Freelance',
     description:
@@ -63,7 +73,7 @@ const workData = [
     image: 'assets/WeCreatesLogo.png',
   },
   {
-    id: 'w2',
+    id: 'w3',
     date: 'July 2025 – October 2025',
     title: 'Associate Software Engineer',
     company: 'Punditry Tech Labs, Bengaluru',
