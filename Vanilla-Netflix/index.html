@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pramoth S </title>
+  <link rel="icon" href="../assets/me.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="nav" id="nav">
+    <div class="nav_contents">
+      <div class="nav_left">
+        <span class="nav_logo_text" onclick="scrollToSection('hero')">
+          Pramoth S<span class="nav_logo_dot"></span>
+        </span>
+        <!-- <ul class="nav_links">
+          <li onclick="scrollToSection('hero')">Home</li>
+          <li onclick="scrollToSection('skills')">Skills</li>
+          <li onclick="scrollToSection('work')">Experience</li>
+          <li onclick="scrollToSection('intern')">Internship</li>
+          <li onclick="scrollToSection('projects')">Projects</li>
+          <li onclick="scrollToSection('seminars')">Seminars</li>
+          <li onclick="scrollToSection('education')">Education</li>
+          <li onclick="scrollToSection('achievements')">Achievements</li>
+          <li onclick="scrollToSection('personal')">About</li>
+          <li onclick="scrollToSection('contact')">Contact</li>
+        </ul> -->
+      </div>
+
+      <div class="nav_right">
+        <a class="nav_resume_btn" href="../assets/Pramoth.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a href="https://www.linkedin.com/in/pramoths" target="_blank" rel="noreferrer" class="nav_icon_link"
+          title="LinkedIn">
+          <svg class="nav_icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="https://github.com/pramoth-26" target="_blank" rel="noreferrer" class="nav_icon_link" title="GitHub">
+          <svg class="nav_icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <img class="nav_avatar" src="../assets/me.jpg" alt="Pramoth S"
+          onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png';">
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <header id="hero" class="banner"
+    style="background-size: cover; background-image: linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.4) 100%), linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.8) 60%, #ffffff 100%), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop'); background-position: center center;">
+
+    <div class="banner_inner">
+      <div class="banner_contents">
+        <p class="banner_tagline">Hi, I'm</p>
+        <h1 class="banner_title">Pramoth S. MCA.,</h1>
+        <h2 class="banner_subtitle">Full-Stack Developer</h2>
+        <p class="banner_description">
+          Full Stack Developer with hands-on experience in building scalable web applications using
+          React.js, Node.js, Express.js, MongoDB, and MERN stack architecture. Experienced in
+          developing responsive UIs, REST APIs, AI-integrated features, and multi-service management
+          systems. Passionate about building real-world business solutions through modern web technologies.
+        </p>
+        <div class="banner_buttons">
+          <a class="banner_button play_button" href="../assets/Pramoth.pdf" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z" />
+            </svg>
+            View Resume
+          </a>
+          <a class="banner_button more_info_button" href="mailto:pramothsathiskumar@gmail.com">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+            Send Email
+          </a>
+        </div>
+
+        <div class="banner_stats">
+          <div class="banner_stat">
+            <span class="stat_number">3+</span>
+            <span class="stat_label">Years Coding</span>
+          </div>
+          <div class="banner_stat_divider"></div>
+          <div class="banner_stat">
+            <span class="stat_number">10+</span>
+            <span class="stat_label">Projects</span>
+          </div>
+          <div class="banner_stat_divider"></div>
+          <div class="banner_stat">
+            <span class="stat_number">4+</span>
+            <span class="stat_label">Internships</span>
+          </div>
+          <div class="banner_stat_divider"></div>
+          <div class="banner_stat">
+            <span class="stat_number">MERN</span>
+            <span class="stat_label">Stack Expert</span>
+          </div>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+    <div class="banner_image_right">
+      <img src="../assets/me.jpg" alt="Pramoth S" />
+    </div>
+    <div class="banner--fadeBottom"></div>
+  </header>
+
+  <!-- Rows Container -->
+  <div class="app_rows" id="app_rows">
+    <!-- Rows will be injected here by script.js -->
+  </div>
+
+  <!-- About Me -->
+  <section id="personal" class="static_section">
+    <div class="static_section_inner">
+      <h2 class="static_heading">About Me</h2>
+      <div class="about_cards" id="about_cards">
+        <!-- Injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="static_section contact_sec">
+    <div class="static_section_inner">
+      <h2 class="static_heading">Get In Touch</h2>
+      <p class="contact_body">
+        I'm currently looking for new opportunities. Whether you have a question or just want
+        to say hi, I'll try my best to get back to you!
+      </p>
+      <div class="contact_actions">
+        <a href="mailto:pramothsathiskumar@gmail.com" class="nf_btn primary">Send Email</a>
+        <a href="https://www.linkedin.com/in/pramoths" target="_blank" rel="noreferrer"
+          class="nf_btn ghost">LinkedIn</a>
+        <a href="https://github.com/pramoth-26" target="_blank" rel="noreferrer" class="nf_btn ghost">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="app_footer">
+    <p>Designed &amp; Built by <span class="footer_name">Pramoth S</span></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
