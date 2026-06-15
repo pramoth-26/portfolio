@@ -1,897 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pramoth S </title>
     <link rel="icon" href="assets/me.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="Vanilla-Netflix/style.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <a href="#" class="logo">Pramoth S</a>
-        
-        <!-- Desktop Navigation -->
-        <ul class="nav-links">
-            <li><a href="#hero"> Home</a></li>
-                <li><a href="assets/pramoths.pdf" target="_blank">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/pramoths?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></li>
-                <li><a href="https://github.com/pramoth-26" target="_blank">Github</a></li>
-                <li><a href="#personal"> About</a></li>
-                <li><a href="#contact"> Contact</a></li>
-        </ul>
-        
-        <!-- Burger Menu -->
-        <div class="burger-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+    <!-- Navbar -->
+    <div class="nav" id="nav">
+        <div class="nav_contents">
+            <div class="nav_left">
+                <span class="nav_logo_text" onclick="scrollToSection('hero')">
+                    Pramoth S<span class="nav_logo_dot"></span>
+                </span>
+                <!-- <ul class="nav_links">
+          <li onclick="scrollToSection('hero')">Home</li>
+          <li onclick="scrollToSection('skills')">Skills</li>
+          <li onclick="scrollToSection('work')">Experience</li>
+          <li onclick="scrollToSection('intern')">Internship</li>
+          <li onclick="scrollToSection('projects')">Projects</li>
+          <li onclick="scrollToSection('seminars')">Seminars</li>
+          <li onclick="scrollToSection('education')">Education</li>
+          <li onclick="scrollToSection('achievements')">Achievements</li>
+          <li onclick="scrollToSection('personal')">About</li>
+          <li onclick="scrollToSection('contact')">Contact</li>
+        </ul> -->
+            </div>
+
+            <div class="nav_right">
+                <a class="nav_resume_btn" href="assets/Pramoth.pdf" target="_blank" rel="noreferrer">Resume</a>
+                <a href="https://www.linkedin.com/in/pramoths" target="_blank" rel="noreferrer" class="nav_icon_link"
+                    title="LinkedIn">
+                    <svg class="nav_icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/pramoth-26" target="_blank" rel="noreferrer" class="nav_icon_link"
+                    title="GitHub">
+                    <svg class="nav_icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                    </svg>
+                </a>
+                <img class="nav_avatar" src="assets/me.jpg" alt="Pramoth S"
+                    onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png';">
+            </div>
         </div>
-        
-        <!-- Mobile Navigation -->
-        <ul class="mobile-nav">
-            <li><a href="#hero"> Home</a></li>
-                <li><a href="assets/pramoths.pdf" target="_blank">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/pramoths?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></li>
-                <li><a href="https://github.com/pramoth-26" target="_blank">Github</a></li>
-                <li><a href="#personal"> About</a></li>
-                <li><a href="#contact"> Contact</a></li>
-        </ul>
+    </div>
+
+    <!-- Banner -->
+    <header id="hero" class="banner"
+        style="background-size: cover; background-image: linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.4) 100%), linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.8) 60%, #ffffff 100%), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop'); background-position: center center;">
+
+        <div class="banner_inner">
+            <div class="banner_contents">
+                <p class="banner_tagline">Hi, I'm</p>
+                <h1 class="banner_title">Pramoth S. MCA.,</h1>
+                <h2 class="banner_subtitle">Full-Stack Developer</h2>
+                <p class="banner_description">
+                    Full Stack Developer with hands-on experience in building scalable web applications using
+                    React.js, Node.js, Express.js, MongoDB, and MERN stack architecture. Experienced in
+                    developing responsive UIs, REST APIs, AI-integrated features, and multi-service management
+                    systems. Passionate about building real-world business solutions through modern web technologies.
+                </p>
+                <div class="banner_buttons">
+                    <a class="banner_button play_button" href="assets/Pramoth.pdf" target="_blank" rel="noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z" />
+                        </svg>
+                        View Resume
+                    </a>
+                    <a class="banner_button more_info_button" href="mailto:pramothsathiskumar@gmail.com">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                        Send Email
+                    </a>
+                </div>
+
+                <div class="banner_stats">
+                    <div class="banner_stat">
+                        <span class="stat_number">3+</span>
+                        <span class="stat_label">Years Coding</span>
+                    </div>
+                    <div class="banner_stat_divider"></div>
+                    <div class="banner_stat">
+                        <span class="stat_number">10+</span>
+                        <span class="stat_label">Projects</span>
+                    </div>
+                    <div class="banner_stat_divider"></div>
+                    <div class="banner_stat">
+                        <span class="stat_number">4+</span>
+                        <span class="stat_label">Internships</span>
+                    </div>
+                    <div class="banner_stat_divider"></div>
+                    <div class="banner_stat">
+                        <span class="stat_number">MERN</span>
+                        <span class="stat_label">Stack Expert</span>
+                    </div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="banner_image_right">
+            <img src="assets/me.jpg" alt="Pramoth S" />
+        </div>
+        <div class="banner--fadeBottom"></div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-            <div class="hero-image">
-                <img src="assets/me.jpg" alt="Pramoth S">
-            </div>
-            <div class="hero-content">
-                <h3>Hi, I'm</h3>
-                <h1>Pramoth S. MCA.,</h1>
-                <h2>A Full-Stack Developer </h2>
-                <!-- <h3> Associate Software Engineer</h3> -->
-                <p>
-                    Full Stack Developer with hands-on experience in building
-                    scalable web applications using
-                    React.js, Node.js, Express.js, MongoDB, and MERN stack
-                    architecture. Experienced in developing
-                    responsive user interfaces, REST APIs, AI-integrated
-                    features, and multi-service management
-                    systems. Skilled in WhatsApp automation, payment gateway
-                    integration, OTP authentication,
-                    and cloud-based deployment. Passionate about building
-                    real-world business solutions through
-                    modern web technologies and freelance client projects.
-                </p>
-                <div class="hero-buttons">
-                    <a href="assets/pramoths.pdf" target="_blank"
-                        class="btn">View Resume</a>
-                    <a href="mailto:pramothsathiskumar@gmail.com"
-                        class="btn">Send Email</a>
+    <!-- Rows Container -->
+    <div class="app_rows" id="app_rows">
+        <!-- Rows will be injected here by script.js -->
+    </div>
 
-                </div>
-            </div>
-        </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-            <div class="container">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-
-                    <div class="skill-category">
-                        <h3>Programming Languages</h3>
-                        <ul>
-                            <li>JavaScript </li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Python </li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Frontend Frameworks</h3>
-                        <ul>
-                            <li>React.js</li>
-                            <li>Angular</li>
-                            <li>Bootstrap</li>
-                            <li>Tailwind CSS</li>
-                            <li>Responsive UI</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend Technologies </h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>PHP</li>
-                            <li>REST API Development</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Databases</h3>
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                            <li>Firestore</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Cloud & BaaS </h3>
-                        <ul>
-                            <li>Firebase (Authentication)</li>
-                            <li>Firebase (Firestore)</li>
-                            <li>Firebase (Hosting)</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>GenAI & AI Integration </h3>
-                        <ul>
-                            <li> Prompt Engineering</li>
-                            <li> AI-based Feature Integration</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Tools & Platforms</h3>
-                        <ul>
-                            <li>GitHub</li>
-                            <li>Postman</li>
-                            <li> VS Code</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Architecture </h3>
-                        <ul>
-                            <li>MEAN Stack</li>
-                            <li>MERN Stack</li>
-                            <li>API Integration</li>
-                            <li>CRUD Operations</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Work Experience Section -->
-   <section id="work">
-            <div class="experience-container">
-                <h2>Work Experience</h2>
-
-                <div class="experience-item">
-                    <div class="experience-image">
-                        <img src="assets/WeCreatesLogo.png" alt="Punditry Tech Labs">
-                    </div>
-                    <div class="experience-content">
-                        <p class="experience-date">November 2025 – Present</p>
-                        <h3 class="experience-title">Freelance Full Stack Developer </h3>
-                        <h4>Self-Employed / Freelance</h4>
-                        <p class="experience-description">
-                            Developed custom client projects including booking, delivery, and management systems.
-Integrated WhatsApp automation, OTP authentication, and payment gateway features.
-Designed responsive UI and scalable backend APIs using Node.js and MongoDB.
-                        </p>
-                        <div class="experience-tech">
-                            <span class="tech-pill">MERN</span>
-                            <span class="tech-pill">MEAN</span>
-                            <span class="tech-pill">Firebase</span>
-                            <span class="tech-pill">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-image">
-                        <img src="assets/punditry.png" alt="Punditry Tech Labs">
-                    </div>
-                    <div class="experience-content">
-                        <p class="experience-date">July 2025 - October 2025</p>
-                        <h3 class="experience-title">Associate Software
-                            Engineer</h3>
-                        <h4>Punditry Tech Labs, Bengaluru</h4>
-                        <p class="experience-description">
-                            Developed responsive web applications using React.js and MERN stack technologies.
-Integrated AI-based features and optimized application workflows and performance.
-Collaborated with team members to build scalable frontend and backend modules.
-                        </p>
-                        <div class="experience-tech">
-                            <span class="tech-pill">React</span>
-                            <span class="tech-pill">Node.js</span>
-                            <span class="tech-pill">Next.js</span>
-                            <!-- <span class="tech-pill">AWS</span> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <!-- Intern Section -->
-    <section id="intern">
-        <div class="experience-container">
-            <h2>Internship & Projects</h2>
-            
-            <!-- Experience Item 1 -->
-            <div class="experience-item">
-                <div class="experience-image">
-                    <img src="assets/thulija.png" alt="Thulija Technologies">
-                </div>
-                <div class="experience-content">
-                    <p class="experience-date">May 2023 - August 2023</p>
-                    <h3 class="experience-title">Angular Developer Intern</h3>
-                    <h4>Thulija Technologies, Malaysia</h4>
-                    <p class="experience-description">
-                        Completed four-month internship in Angular Full Stack development. Worked on enterprise-level applications and contributed to frontend architecture decisions.
-                    </p>
-                    <div class="experience-tech">
-                        <span class="tech-pill">Angular</span>
-                        <span class="tech-pill">TypeScript</span>
-                        <span class="tech-pill">Node.js</span>
-                        <span class="tech-pill">MongoDB</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Experience Item 2 -->
-            <div class="experience-item">
-                <div class="experience-image">
-                    <img src="assets/dce.png" alt="DCE Technologies">
-                </div>
-                <div class="experience-content">
-                    <p class="experience-date">January 2023 - April 2023</p>
-                    <h3 class="experience-title">React Developer Intern</h3>
-                    <h4>DCE Technologies, Virudhunagar</h4>
-                    <p class="experience-description">
-                        Completed four-month internship and project in React Full Stack development. Built a complete inventory management system with real-time updates.
-                    </p>
-                    <div class="experience-tech">
-                        <span class="tech-pill">React</span>
-                        <span class="tech-pill">Express</span>
-                        <span class="tech-pill">MongoDB</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Experience Item 3 -->
-            <div class="experience-item">
-                <div class="experience-image">
-                    <img src="assets/hostel.png" alt="VHNSN College">
-                </div>
-                <div class="experience-content">
-                    <p class="experience-date">Sep 2024 - Jan 2025</p>
-                    <h3 class="experience-title">PHP Developer Project</h3>
-                    <h4>V.H.N.S.N College, Virudhunagar</h4>
-                    <p class="experience-description">
-                        Using PHP and MySQL to develope and design Hostel Management for Real Time to VHNSN College.
-                    </p>
-                    <div class="experience-tech">
-                        <span class="tech-pill">PHP</span>
-                        <span class="tech-pill">Oracle</span>
-                        <span class="tech-pill">Bootstrap</span>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <!-- Experience Item 4 -->
-            <div class="experience-item">
-                <div class="experience-image">
-                    <img src="assets/intern.jpg" alt="Appin Technologies">
-                </div>
-                <div class="experience-content">
-                    <p class="experience-date">June 2022</p>
-                    <h3 class="experience-title">Python Developer Intern</h3>
-                    <h4>Appin Technologies, Coimbatore</h4>
-                    <p class="experience-description">
-                        Completed one-month intensive internship in Python Full Stack development. Developed a Django-based e-commerce platform during the training period.
-                    </p>
-                    <div class="experience-tech">
-                        <span class="tech-pill">Python</span>
-                        <span class="tech-pill">Django</span>
-                        <span class="tech-pill">Bootstrap</span>
-                    </div>
-                </div>
+    <!-- About Me -->
+    <section id="personal" class="static_section">
+        <div class="static_section_inner">
+            <h2 class="static_heading">About Me</h2>
+            <div class="about_cards" id="about_cards">
+                <!-- Injected by script.js -->
             </div>
         </div>
     </section>
 
-
-    <!-- Projects Section -->
-    <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="assets/weservice.mp4" target="_blank">
-                                <img src="assets/weservices.jpg"
-                                    alt="Event Management">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Multi Service Platform</h3>
-                            <p>Developed a scalable multi-service management
-                                system with branch handling,
-                                vendor management, order processing, and
-                                centralized admin control panel.
-                                WhatsApp integration for automated
-                                messaging/replies, OTP authentication,
-                                delivery tracking, and online booking
-                                management. </p>
-                            <div class="project-tech">
-                                <span>React.js</span>
-                                <span>MongoDB</span>
-                                <span>Node.js</span>
-                                <span>MERN</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://www.weservices.in"
-                                    target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a href="assets/weservices.jpg"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="assets/ecomm.mp4" target="_blank">
-                                <img src="assets/ecomm.jpg"
-                                    alt="Event Management">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>E-Commerce Platform</h3>
-                            <p> Developed a modern e-commerce website using
-                                React and Firebase with secure
-                                authentication, real-time database, payment
-                                gateway integration, dynamic
-                                product management, and responsive user-friendly
-                                interface. </p>
-                            <div class="project-tech">
-                                <span>React.js</span>
-                                <span>Firestore</span>
-                                <span>Firebase (Authentication )</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://ecomm.wecreates.ltd"
-                                    target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a href="assets/ecomm.jpg"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="assets/hotels.mp4" target="_blank">
-                                <img src="assets/hotels.jpg"
-                                    alt="Event Management">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Booking Platform</h3>
-                            <p> Developed a modern Integrated AI functionality
-                                to enhance operational efficiency and data
-                                handling. </p>
-                            <div class="project-tech">
-                                <span>Angular.js</span>
-                                <span>Firestore</span>
-                                <span>Firebase (Authentication )</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://hotel.wecreates.ltd"
-                                    target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a href="assets/hotels.jpg"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="assets/hostel site.mp4" target="_blank">
-                                <img src="assets/hostelsite.png"
-                                    alt="Event Management">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Hostel Management System</h3>
-                            <p>To develope and design Hostel Management for Real
-                                Time to VHNSN College.</p>
-                            <div class="project-tech">
-                                <span>PHP</span>
-                                <span>MySQL</span>
-                                <span>Bootstrap</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="assets/hostel site.mp4"
-                                    target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="https://arasitourism.vercel.app "
-                                target="_blank">
-                                <img src="assets/Tours.JPG"
-                                    alt="Event Management">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Tourism Website</h3>
-                            <p>To develope and design Tousism Management To the
-                                Client.</p>
-                            <div class="project-tech">
-                                <span>React.js</span>
-                                <span>JavaScript</span>
-                                <span>Bootstrap</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://arasitourism.vercel.app"
-                                    target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a
-                                    href="https://github.com/pramoth-26/tourism"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="assets/hunt.mp4" target="_blank">
-                                <img src="assets/treasure.jpg"
-                                    alt="Treasure Hunt">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Treasure Hunt</h3>
-                            <p>Interactive game using QR codes to guide players
-                                to the next location. Built with HTML, CSS, and
-                                JavaScript.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>QR Codes</span>
-                            </div>
-                            <div class="project-links">
-                                <a
-                                    href="https://pramoth-26.github.io/Treasure-hunt/"
-                                    target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a
-                                    href="https://github.com/pramoth-26/Treasure-hunt"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="assets/hero.mp4" target="_blank">
-                                <img src="assets/phprented.png"
-                                    alt="Rented Inventory">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Rented Inventory System</h3>
-                            <p>Application to manage rented items inventory.
-                                Built with PHP and MySQL.</p>
-                            <div class="project-tech">
-                                <span>PHP</span>
-                                <span>MySQL</span>
-                                <span>js</span>
-                                <span>CSS</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="http://pramoth.ct.ws/assets/signin.php"
-                                    target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a
-                                    href="https://github.com/pramoth-26/rentedsystem"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="assets/events.mp4" target="_blank">
-                                <img src="assets/stud.jpg"
-                                    alt="Event Management">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Event Management System</h3>
-                            <p>Portal for students and administrators to manage
-                                college events. Built with PHP and MySQL.</p>
-                            <div class="project-tech">
-                                <span>PHP</span>
-                                <span>MySQL</span>
-                                <span>Bootstrap</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="assets/events.mp4" target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a
-                                    href="https://github.com/pramoth-26/Event_Planner"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="assets/arasi.mp4" target="_blank">
-                                <img src="assets/arasi.jpg" alt="Shop Website">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Business Website</h3>
-                            <p>Custom shop website designed to meet client
-                                requirements. Built with HTML, CSS, and
-                                JavaScript.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>Responsive Design</span>
-                            </div>
-                            <div class="project-links">
-                                <a
-                                    href="https://pramoth-26.github.io/Arasi_Air_Travels/"
-                                    target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a
-                                    href="https://github.com/pramoth-26/Arasi_Air_Travels"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="project-card">
-                    <div class="project-image">
-                        <a href="assets/game.jpg" target="_blank">
-                            <img src="assets/game.jpg" alt="Rented Inventory">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>IQ 4 X 4 Puzzle</h3>
-                        <p>Application to manage rented items inventory. Built with .NET.</p>
-                        <div class="project-tech">
-                            <span>.NET</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="assets/game.jpg" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/pramoth-26/VB-IQ-gaming"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="assets/calender.mp4" target="_blank">
-                                <img src="assets/calender.png"
-                                    alt="Rented Inventory">
-                            </a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Calender Template</h3>
-                            <p>Calendar Application to develop to manage events.
-                                Built with Angular.</p>
-                            <div class="project-tech">
-                                <span>Angular</span>
-                                <span>Bootstrap</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="assets/calender.mp4" target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="project-card">
-                    <div class="project-image">
-                        <a href="assets/portfolio.mp4" target="_blank">
-                            <img src="assets/portfolio.png" alt="Event Management">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio</h3>
-                        <p>Design personal portfolio webpage using web Applications.</p>
-                        <div class="project-tech">
-                            <span>HTML:5</span>
-                            <span>CSS</span>
-                            <span>Bootstrap</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/pramoth-26/portfolio" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/pramoth-26/portfolio"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-
-                    <!-- <div class="project-card">
-                    <div class="project-image">
-                        <a href="assets/hero.mp4" target="_blank">
-                            <img src="assets/rented.png" alt="Rented Inventory">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>Rented Inventory System</h3>
-                        <p>Application to manage rented items inventory. Built with React and MongoDB.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>MongoDB</span>
-                            <span>Node.js</span>
-                            <span>Express</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="assets/hero.mp4" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/pramoth-26/Rented-Inventory"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-
-                </div>
-            </div>
-        </section>
-
-    <!-- SEMINARS Section -->
-    <section id="experience">
-        <div class="container">
-            <h2>Seminars & Webinars</h2>
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <img src="assets/umizine.png" class="exp-img" alt="UmagineTN">
-                        <h3>UmagineTN</h3>
-                        <p class="timeline-date">Feb 2024 </p>
-                        <p>Organized by Tamilnadu Department of Information Technology.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <img src="assets/hackathon.jpg" class="exp-img" alt="Hackathon">
-                        <h3>Hackathon</h3>
-                        <p class="timeline-date">March 2025 </p>
-                        <p>Organized by South Tamilnadu Ariviyal Sangam Hackathon.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <img src="assets/yep.jpg" class="exp-img" alt="TCS Empowers - YEP">
-                        <h3>TCS Empowers - YEP</h3>
-                        <p class="timeline-date">Jan 2023 - Mar 2023 </p>
-                        <p>Organized by TCS careers (Tata Consultancy Services ).</p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <img src="assets/workshop.jpg" class="exp-img" alt="Bootstrap Workshop">
-                        <h3>Bootstrap Workshop</h3>
-                        <p class="timeline-date">08 June 2024 </p>
-                        <p>One Day Workshop of Bootstrap in ETHER Services.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <img src="assets/data.jpg" class="exp-img" alt="Data Structure">
-                        <h3>Data Structure</h3>
-                        <p class="timeline-date">Aug 2023 - Jan 2024 </p>
-                        <p>Data Structure Programming Completed in vhnsn college .</p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <img src="assets/tcs.jpg" class="exp-img" alt="TCS Empowers ">
-                        <h3>TCS Empowers </h3>
-                        <p class="timeline-date">Mar 2023 </p>
-                        <p>APL - Literacy as a Service “Citizen Entitlements.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <img src="assets/moulding.jpg" class="exp-img" alt="MINERVA'23">
-                        <h3>MINERVA'23</h3>
-                        <p class="timeline-date">24 Jan 2023 </p>
-                        <p>Moulding Interpersonal Skills Towards Victory Aspects Organized by Vhnsn College.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <img src="assets/logical.jpg" class="exp-img" alt="Reasoning Skill ">
-                        <h3>Reasoning Skill </h3>
-                        <p class="timeline-date">2022 - 2023 </p>
-                        <p>Fundamentals of Logical and Reasoning skills Organized by VHNSN College.</p>
-                    </div>
-                </div>
+    <!-- Contact -->
+    <section id="contact" class="static_section contact_sec">
+        <div class="static_section_inner">
+            <h2 class="static_heading">Get In Touch</h2>
+            <p class="contact_body">
+                I'm currently looking for new opportunities. Whether you have a question or just want
+                to say hi, I'll try my best to get back to you!
+            </p>
+            <div class="contact_actions">
+                <a href="mailto:pramothsathiskumar@gmail.com" class="nf_btn primary">Send Email</a>
+                <a href="https://www.linkedin.com/in/pramoths" target="_blank" rel="noreferrer"
+                    class="nf_btn ghost">LinkedIn</a>
+                <a href="https://github.com/pramoth-26" target="_blank" rel="noreferrer" class="nf_btn ghost">GitHub</a>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-grid">
-                <div class="education-item">
-                    <h3>Master of Computer Applications (MCA)</h3>
-                    <h4>V.H.N.S.N College, Virudhunagar</h4>
-                    <p class="edu-date">2023 - 2025</p>
-                    <p>Specialized in Full Stack Development, participated in multiple tech events and internships. Graduated with First Class with Distinction.</p>
-                </div>
-
-                <div class="education-item">
-                    <h3>Bachelor of Commerce - Computer Applications (B.Com CA)</h3>
-                    <h4>V.H.N.S.N College, Virudhunagar</h4>
-                    <p class="edu-date">2020 - 2023</p>
-                    <p>Completed with strong academic performance. Participated in seminars, cultural programs, and technical workshops.</p>
-                </div>
-
-                <div class="education-item">
-                    <h3>Higher Secondary School (HSC)</h3>
-                    <h4>Vivekananda Matric Hr.Sec.School, Karur</h4>
-                    <p class="edu-date">2019 - 2020</p>
-                    <p>Completed 12th grade with Computer stream.</p>
-                </div>
-
-                <div class="education-item">
-                    <h3>Secondary School Leaving Certificate (SSLC)</h3>
-                    <h4>Raja Matric Hr.Sec.School, Vedalai</h4>
-                    <p class="edu-date">2017 - 2018</p>
-                    <p>Completed with strong academic performance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Achievements Section -->
-    <section id="achievements">
-        <div class="container">
-            <h2>Achievements & Certifications</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <h3>Best Volunteer</h3>
-                    <p>Awarded Best Volunteer at Fine Arts Club and Senthi Cineforum, VHNSN College in 2024 and 2025.</p>
-                </div>
-                <div class="achievement-card">
-                    <h3>Students Organizer</h3>
-                    <p>Students Organizer in Brilliant Bharath Hackathon - 2K25</p>
-                </div>
-                <div class="achievement-card">
-                    <h3>Event Organizer</h3>
-                    <p>Role as a Leader and organize the hostel day and Inter-departmental Culture in 2025</p>
-                </div>
-                <div class="achievement-card">
-                    <h3>Design Competition</h3>
-                    <p>Won Poster Making Competition at Inter Department Culture event organized by Department of Computer Applications.</p>
-                </div>
-                <div class="achievement-card">
-                    <h3>Enhancement of Communication skill</h3>
-                    <p>“Enhancement of Communication skill” Organized by Student Service Center, VHNSN College in 2024.</p>
-                </div>
-                <div class="achievement-card">
-                    <h3>Photography Award</h3>
-                    <p>Recognized in Photography Competition organized by Rotary club of Rajapalayam.</p>
-                </div>
-                <div class="achievement-card">
-                    <h3>Best Performer</h3>
-                    <p>Best performer In RRC ( Red Ribbon Club) Activities in VHNSN College in 2022</p>
-                </div>
-                <div class="achievement-card">
-                    <h3>Computer - Quiz</h3>
-                    <p>“Computer Technologies - Online Quiz” by Dept of Computer Applications, VHNSN College in 2020.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Personal Info Section -->
-    <section id="personal">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="personal-info">
-                <div class="info-item">
-                    <h4>Name:</h4>
-                    <p>S. Pramoth</p>
-                </div>
-                <div class="info-item">
-                    <h4>Father Name:</h4>
-                    <p>A. Sathishkumar</p>
-                </div>
-                <div class="info-item">
-                    <h4>Date of Birth:</h4>
-                    <p>26/12/2002</p>
-                </div>
-                <div class="info-item">
-                    <h4>Email:</h4>
-                    <p>pramothsathiskumar@gmail.com</p>
-                </div>
-                <div class="info-item">
-                    <h4>Phone:</h4>
-                    <p>+91 8220543596</p>
-                </div>
-                <div class="info-item">
-                    <h4>Age:</h4>
-                    <p>23</p>
-                </div>
-                <div class="info-item">
-                    <h4>Gender:</h4>
-                    <p>Male</p>
-                </div>
-                <div class="info-item">
-                    <h4>Languages:</h4>
-                    <p>English, Tamil</p>
-                </div>
-                <div class="info-item">
-                    <h4>Interests:</h4>
-                    <p>DJing, Music, Photography, Drawing, Technology</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container"><br>
-            <h2>Get In Touch</h2>
-            <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-            <a href="mailto:pramothsathiskumar@gmail.com" class="btn">Send Email</a>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/pramoths" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/pramoth-26" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Designed & Built by <a href="index.html">Pramoth S</a></p>
-        
+    <footer class="app_footer">
+        <p>Designed &amp; Built by <span class="footer_name">Pramoth S</span></p>
     </footer>
 
-
-    <script>
-        const burger = document.querySelector('.burger-menu');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const navLinks = document.querySelectorAll('.mobile-nav li');
-        
-        burger.addEventListener('click', () => {
-            // Toggle mobile menu
-            mobileNav.classList.toggle('active');
-            
-            // Animate burger icon
-            burger.classList.toggle('toggle');
-            
-            // Animate links
-            navLinks.forEach((link, index) => {
-                if (link.style.animation) {
-                    link.style.animation = '';
-                } else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-                }
-            });
-        });
-        
-        // Close menu when clicking on a link
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileNav.classList.remove('active');
-                burger.classList.remove('toggle');
-                navLinks.forEach(link => {
-                    link.style.animation = '';
-                });
-            });
-        });
-    </script>
+    <script src="Vanilla-Netflix/data.js"></script>
+    <script src="Vanilla-Netflix/script.js"></script>
 </body>
+
 </html>
-
-
-
