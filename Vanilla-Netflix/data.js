@@ -54,9 +54,9 @@ const skillsData = [
 const workData = [
   {
     id: 'w1',
-    date: 'June 2025 – May 2026',
+    date: 'May 2026 - Present',
     title: ' Full Stack Developer',
-    company: 'ERPA',
+    company: 'ERPA, Hyderabad',
     description:
       'Developed and maintained ERP-based applications using the MEAN stack (MongoDB, Express.js, Angular, Node.js). Collaborated with cross-functional teams using Jira for task management and Git for version control. Worked on Workday-related projects, contributing to feature development, bug fixing, and system enhancements. Utilized Sherpa AI to streamline development workflows and improve productivity.',
     tech: [ 'Angular','Node.js', 'DBeaver', 'JavaScript'],
