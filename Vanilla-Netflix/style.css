@@ -57,6 +57,7 @@ body {
   user-select: none;
   font-family: 'Georgia', serif;
   flex-shrink: 0;
+  gap: 14px;
 }
 
 .nav_logo_dot { color: #111111; }
